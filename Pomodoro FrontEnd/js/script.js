@@ -36,3 +36,11 @@ function startTimer() {
     }
   }, 1000);
 }
+
+function pauseTimer() {
+  clearInterval(timerInterval);
+  isRunning = false;
+  startBtn.textContent = "Resume";
+  startBtn.disabled = false;
+  pauseBtn.disabled = true;
+}
