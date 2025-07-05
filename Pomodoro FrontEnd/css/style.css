@@ -1,17 +1,17 @@
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
 }
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 300%;
-    font-weight: 1;
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 300%;
+  font-weight: 1;
 }
 #timer {
   font-size: 700%;
@@ -38,4 +38,10 @@ h1{
 }
 #buttons button:hover {
   background-color: #b9b9b9;
+}
+
+#buttons button:disabled {
+  background-color: #888;
+  color: #ccc;
+  cursor: not-allowed;
 }
