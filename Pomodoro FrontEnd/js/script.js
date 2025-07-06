@@ -1,9 +1,9 @@
 let workTimer = 1 * 60;
 let breakTimer = 5 * 60;
-let timeLeft = workTimer; 
+let timeLeft = workTimer;
 let timerInterval = null;
 let isRunning = false;
-let mode = "Work"
+let mode = "Work";
 
 const timerDisplay = document.getElementById("timer");
 const startBtn = document.getElementById("start-btn");
@@ -59,3 +59,14 @@ function pauseTimer() {
   pauseBtn.disabled = true;
 }
 updateDisplay();
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  isRunning = false;
+  startBtn.textContent = "Start";
+  startBtn.disabled = false;
+  pauseBtn.disabled = true;
+
+  timeLeft = mode === "Work" ? workTimer : breakTimer;
+  updateDisplay();
+}
