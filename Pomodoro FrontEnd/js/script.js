@@ -1,4 +1,4 @@
-let workTimer = 1 * 60;
+let workTimer = 25 * 60;
 let breakTimer = 5 * 60;
 let timeLeft = workTimer;
 let timerInterval = null;
